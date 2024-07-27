@@ -1,0 +1,18 @@
+/* Error: expected ")".
+ *   ,
+ * 3 |     "secondary": #9E9E9E
+ *   |                ^
+ *   '
+ *   src\scss\_custom.scss 3:16  @import
+ *   src\scss\styless.scss 1:9   root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ")".\a   \2577 \a 3 \2502      "secondary": #9E9E9E\d\a   \2502                 ^\a   \2575 \a   src\\scss\\_custom.scss 3:16  @import\a   src\\scss\\styless.scss 1:9   root stylesheet';
+}
